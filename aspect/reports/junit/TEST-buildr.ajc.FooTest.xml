@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="notebook" name="buildr.ajc.FooTest" tests="2" time="0.13" timestamp="2010-11-04T16:59:48">
+<testsuite errors="0" failures="0" hostname="notebook" name="buildr.ajc.FooTest" tests="2" time="0.092" timestamp="2010-11-13T16:19:37">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="jruby.home" value="C:\data\jruby-1.5.3" />
@@ -16,10 +16,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD" />
     <property name="sun.os.patch.level" value="" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
-    <property name="user.dir" value="C:\data\workspaces\blau\aspect" />
+    <property name="user.dir" value="C:\data\netbeans\workspaces\default\buildr-ajc\aspect" />
     <property name="java.runtime.version" value="1.6.0_19-b04" />
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
-    <property name="basedir" value="C:\data\workspaces\blau\aspect" />
+    <property name="basedir" value="C:\data\netbeans\workspaces\default\buildr-ajc\aspect" />
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_19\jre\lib\endorsed" />
     <property name="os.arch" value="x86" />
     <property name="ant.project.default-target" value="" />
@@ -48,7 +48,7 @@
     <property name="user.name" value="nico" />
     <property name="jruby.stack.max" value="1024k" />
     <property name="jruby.script" value="jruby" />
-    <property name="java.class.path" value="C:\data\workspaces\blau\aspect\target\test\classes;C:\data\workspaces\blau\aspect\target\test\resources;C:\data\workspaces\blau\aspect\target\classes;C:\data\workspaces\blau\aspect\target\resources;C:\Users\nico\.m2\repository\org\aspectj\aspectjrt\1.6.9\aspectjrt-1.6.9.jar;C:\Users\nico\.m2\repository\junit\junit\4.7\junit-4.7.jar;C:\Users\nico\.m2\repository\org\jmock\jmock\2.5.1\jmock-2.5.1.jar;C:\Users\nico\.m2\repository\org\jmock\jmock-junit4\2.5.1\jmock-junit4-2.5.1.jar;C:\Users\nico\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\nico\.m2\repository\org\hamcrest\hamcrest-library\1.1\hamcrest-library-1.1.jar;C:\data\workspaces\blau\aspect;C:\Program Files\Java\jre6\lib\ext\QTJava.zip;C:\Users\nico\.m2\repository\org\apache\ant\ant-launcher\1.8.0\ant-launcher-1.8.0.jar;C:\Users\nico\.m2\repository\org\apache\ant\ant\1.8.0\ant-1.8.0.jar;C:\Users\nico\.m2\repository\org\apache\ant\ant-junit\1.8.0\ant-junit-1.8.0.jar" />
+    <property name="java.class.path" value="C:\data\netbeans\workspaces\default\buildr-ajc\aspect\target\test\classes;C:\data\netbeans\workspaces\default\buildr-ajc\aspect\target\test\resources;C:\data\netbeans\workspaces\default\buildr-ajc\aspect\target\classes;C:\data\netbeans\workspaces\default\buildr-ajc\aspect\target\resources;C:\Users\nico\.m2\repository\org\aspectj\aspectjrt\1.6.9\aspectjrt-1.6.9.jar;C:\Users\nico\.m2\repository\junit\junit\4.7\junit-4.7.jar;C:\Users\nico\.m2\repository\org\jmock\jmock\2.5.1\jmock-2.5.1.jar;C:\Users\nico\.m2\repository\org\jmock\jmock-junit4\2.5.1\jmock-junit4-2.5.1.jar;C:\Users\nico\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\nico\.m2\repository\org\hamcrest\hamcrest-library\1.1\hamcrest-library-1.1.jar;C:\data\netbeans\workspaces\default\buildr-ajc\aspect;C:\Program Files\Java\jre6\lib\ext\QTJava.zip;C:\Users\nico\.m2\repository\org\apache\ant\ant-launcher\1.8.0\ant-launcher-1.8.0.jar;C:\Users\nico\.m2\repository\org\apache\ant\ant\1.8.0\ant-1.8.0.jar;C:\Users\nico\.m2\repository\org\apache\ant\ant-junit\1.8.0\ant-junit-1.8.0.jar" />
     <property name="jruby.shell" value="cmd.exe" />
     <property name="java.vm.specification.version" value="1.0" />
     <property name="sun.arch.data.model" value="32" />
@@ -65,22 +65,12 @@
     <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
     <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
     <property name="sun.cpu.endian" value="little" />
-    <property name="baseDir" value="C:/data/workspaces/blau/aspect/target/test/classes" />
+    <property name="baseDir" value="C:/data/netbeans/workspaces/default/buildr-ajc/aspect/target/test/classes" />
     <property name="sun.desktop" value="windows" />
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
   </properties>
-  <testcase classname="buildr.ajc.FooTest" name="foo_called_aspectWorksFine" time="0.038" />
-  <testcase classname="buildr.ajc.FooTest" name="test_foo_called_aspectWorksFine" time="0.012">
-    <failure message="aspect should be work with test classes
-Expected: is &lt;true&gt;
-     got: &lt;false&gt;
-" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: aspect should be work with test classes
-Expected: is &lt;true&gt;
-     got: &lt;false&gt;
-
-	at buildr.ajc.FooTest.test_foo_called_aspectWorksFine(FooTest.java:32)
-</failure>
-  </testcase>
+  <testcase classname="buildr.ajc.FooTest" name="foo_called_aspectWorksFine" time="0.013" />
+  <testcase classname="buildr.ajc.FooTest" name="test_foo_called_aspectWorksFine" time="0.0010" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

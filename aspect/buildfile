@@ -1,4 +1,4 @@
-require "../Ivy/buildr/lib/ajc"
+require "ajc"
 
 define "aspect" do
   

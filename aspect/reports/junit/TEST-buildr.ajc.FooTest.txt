@@ -1,16 +1,5 @@
 Testsuite: buildr.ajc.FooTest
-Tests run: 2, Failures: 1, Errors: 0, Time elapsed: 0,13 sec
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0,092 sec
 
-Testcase: foo_called_aspectWorksFine took 0,036 sec
-Testcase: test_foo_called_aspectWorksFine took 0,009 sec
-	FAILED
-aspect should be work with test classes
-Expected: is <true>
-     got: <false>
-
-junit.framework.AssertionFailedError: aspect should be work with test classes
-Expected: is <true>
-     got: <false>
-
-	at buildr.ajc.FooTest.test_foo_called_aspectWorksFine(FooTest.java:32)
-
+Testcase: foo_called_aspectWorksFine took 0,012 sec
+Testcase: test_foo_called_aspectWorksFine took 0,001 sec
