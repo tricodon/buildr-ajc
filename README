@@ -1,0 +1,18 @@
+== Install
+ gem install buildr-ajc
+
+== Usage
+* Require +ajc+ in your +buildfile+:
+ require 'ajc'
+
+* Add initial method to your +buildr+ project definition:
+ define 'aspects' do
+   compile_with_ajc
+ end
+
+* Now while compiling the project, the +ajc+ compiler detects aspects in your project sources and weaves matching classes in your projetc sources and test sources
+
+* Adding aspects from other libs (libs must be in dependencies of the project) by adding :aspectpath option as array of names that matching the required libs by simple text pattern \*name\* ( e.g. 'name' matches the-name-1.0.jar):
+ compile_with_aspectj :aspectpath => ['spring-aspects', 'my-aspects']
+
+* Other options:
