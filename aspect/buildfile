@@ -1,0 +1,15 @@
+require "../Ivy/buildr/lib/ajc"
+
+define "aspect" do
+  
+  eclipse.natures ['org.eclipse.ajdt.ui.ajnature', 'org.eclipse.jdt.core.javanature']
+  eclipse.classpath_containers ['org.eclipse.ajdt.core.ASPECTJRT_CONTAINER', 'org.eclipse.jdt.launching.JRE_CONTAINER']
+  eclipse.builders ['org.eclipse.ajdt.core.ajbuilder']
+  
+  # aspect dependency 
+  compile.with 'org.aspectj:aspectjrt:jar:1.6.9'
+  
+  compile_with_ajc
+end
+
+
