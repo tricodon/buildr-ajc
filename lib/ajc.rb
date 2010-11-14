@@ -109,8 +109,8 @@ def compile_with_ajc(*opts)
   compile.using :ajc
   test.compile.using :ajc
 
-  hash_opts = {}
   hash_opts ||= opts.last if Hash === opts.last
+  puts "++++ #{hash_opts.inspect}"
   compile.using hash_opts
 
   hash_opts[:test_apspectpath] = compile.target.to_s

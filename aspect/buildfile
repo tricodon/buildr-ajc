@@ -1,4 +1,10 @@
-require "ajc"
+# prepare your eclipse project: buildr clean eclipse artifacts:sources artifacts:javadoc
+# 
+# needs a eclipse classpath variable 'M2_REPO' wich points to your local repo (e.g. user/.m2/repo)
+
+require "../lib/ajc"
+
+repositories.remote << 'http://repo1.maven.org/maven2/'
 
 define "aspect" do
 
@@ -8,10 +14,14 @@ define "aspect" do
   eclipse.builders ['org.eclipse.ajdt.core.ajbuilder']
   
   # aspect dependency
-  # needs a eclipse classpath variable 'M2_REPO' wich points to your local repo (e.g. user/.m2/repo)
-  compile.with 'org.aspectj:aspectjrt:jar:1.6.9'
+  compile.with "org.aspectj:aspectjrt:jar:1.6.9"
   
-  compile_with_ajc
+  compile.with transitive(Buildr::group(
+    'spring-core', 'spring-context', 'spring-aspects', 'spring-aop','spring-orm',
+  		:under=>'org.springframework', 
+  		:version=>'3.0.3.RELEASE'))
+  
+  compile_with_ajc :aspectpath => ["spring-aspects"]
 end
 
 
