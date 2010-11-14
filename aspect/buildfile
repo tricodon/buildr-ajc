@@ -7,7 +7,8 @@ define "aspect" do
   eclipse.classpath_containers ['org.eclipse.ajdt.core.ASPECTJRT_CONTAINER', 'org.eclipse.jdt.launching.JRE_CONTAINER']
   eclipse.builders ['org.eclipse.ajdt.core.ajbuilder']
   
-  # aspect dependency 
+  # aspect dependency
+  # needs a eclipse classpath variable 'M2_REPO' wich points to your local repo (e.g. user/.m2/repo)
   compile.with 'org.aspectj:aspectjrt:jar:1.6.9'
   
   compile_with_ajc
