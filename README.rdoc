@@ -16,3 +16,10 @@
  compile_with_aspectj :aspectpath => ['spring-aspects', 'my-aspects']
 
 * Other options:
+* :aspectpath - array of matching lib names (e.g. 'aspects' matches 'other-aspects-1.2.jar')
+* :verbose - true if any value
+* :debug - true if any value
+* :source - fix to 1.6
+* :deprecation - true if any value
+* :warnings - true if any value
+* :debug - true if any value
