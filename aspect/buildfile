@@ -21,7 +21,7 @@ define "aspect" do
   		:under=>'org.springframework', 
   		:version=>'3.0.3.RELEASE'))
   
-  compile_with_ajc :aspectpath => ["spring-aspects"]
+  compile_with_ajc :aspectpath => ["spring-aspects"], :verbose=>true
 end
 
 
