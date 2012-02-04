@@ -15,7 +15,6 @@ spec = Gem::Specification.new do |s|
   s.description = s.summary
   s.author = 'Nico Mainka'
   s.email = 'nico.maninka@gmail.com'
-  # s.executables = ['your_executable_here']
   s.files = %w(LICENSE README.rdoc Rakefile) + Dir.glob("{bin,lib,spec}/**/*")
   s.require_path = "lib"
   s.bindir = "bin"
@@ -31,7 +30,7 @@ Rake::RDocTask.new do |rdoc|
   files =['README', 'LICENSE', 'lib/**/*.rb']
   rdoc.rdoc_files.add(files)
   rdoc.main = "README.rdoc" # page to start on
-  rdoc.title = "buildr-ajc Docs"
+  rdoc.title = "buildr-ajc Documentation"
   rdoc.rdoc_dir = 'doc/rdoc' # rdoc output folder
   rdoc.options << '--line-numbers'
 end

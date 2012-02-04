@@ -9,9 +9,6 @@ module Buildr
     class Ajc < Base
 
       REQUIRES = Buildr.struct(
-        #:aspectj => "org.aspectj:aspectjrt:jar:1.6.9",
-        #:aspectjlib => "org.aspectj:aspectjlib:jar:1.6.2",
-        #:aspectjweaver => "org.aspectj:aspectjweaver:jar:1.6.9",
       	:aspectjtools => "org.aspectj:aspectjtools:jar:1.6.9"
       ) unless const_defined?('REQUIRES')
 
